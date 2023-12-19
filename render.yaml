@@ -2,9 +2,9 @@ services:
   - type: web
     name: clickhouse
     env: docker
-    plan: standard
+    plan: starter
     autoDeploy: false
     disk:
       name: data
       mountPath: /var/lib/clickhouse
-      sizeGB: 10
+      sizeGB: 5
